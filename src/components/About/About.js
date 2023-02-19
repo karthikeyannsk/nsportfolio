@@ -6,6 +6,11 @@ import './About.css'
 const About = () => {
   const { name, role, description, resume, social } = about
 
+  function openResume(){
+    return <iframe src="https://docs.google.com/gview?url=https://github.com/karthikeyannsk/resume/raw/main/Karthikeyan%20NS%20Resume_Final.pdf" title='resume' style={{width:'100%', height:'100%'}} />
+    // window.open(resume, '_blank')
+  }
+
   return (
     <div className='about center'>
       {name && (
@@ -18,13 +23,15 @@ const About = () => {
       <p className='about__desc'>{description && description}</p>
 
       <div className='about__contact center'>
-        {resume && (
-          <a href={resume}>
-            <span type='button' className='btn btn--outline'>
-              Resume
-            </span>
-          </a>
-        )}
+        {/* <iframe src="https://docs.google.com/gview?url=https://github.com/karthikeyannsk/resume/raw/main/Karthikeyan%20NS%20Resume_Final.pdf&embedded=true" title='resume' style={{width:'100%', height:'100%'}} /> */}
+        {/* {resume && (
+          <button type='button' className='btn btn--outline' onClick={openResume}>resume</button>
+          // <a href={resume}>
+          //   <span type='button' className='btn btn--outline'>
+          //     Resume
+          //   </span>
+          // </a>
+        )} */}
 
         {social && (
           <>

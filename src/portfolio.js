@@ -10,7 +10,7 @@ const about = {
   role: 'Full Stack Engineer',
   description:
     'Experienced Software Engineer with a passion for developing scalable systems that are relatable and user-friendly which expedite the efficiency and effectiveness of the organization. Over 3+ years of experience in .NET Core Web Applications',
-  resume: 'https://example.com',
+  resume: 'https://github.com/karthikeyannsk/resume/raw/main/Karthikeyan%20NS%20Resume_Final.pdf',
   social: {
     linkedin: 'https://linkedin.com'
     // github: 'https://github.com',
@@ -60,7 +60,7 @@ const skills = [
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'learnerkarthik@gmail.com',
+  email: 'karthikns999@gmail.com',
 }
 
 export { header, about, projects, skills, contact }
